@@ -3,6 +3,13 @@
 
 An [em_filter](https://hex.pm/packages/em_filter) agent that returns the current local time, UTC offset, and DST status for any timezone via [timeapi.io](https://timeapi.io/) (free, no key required).
 
+
+<!-- emergence-context -->
+Part of **[EmergenceSystem](https://github.com/EmergenceSystem)** — a distributed
+discovery network of small, single-source agents. This filter joins the em_pop gossip
+mesh and answers `POST /agent/query`; Emquest fans each query out to many filters in
+parallel and aggregates the results.
+
 ## Query
 
 An IANA timezone identifier or a common city name. If the query contains `/` it is used as-is; otherwise a city alias table is checked (30 cities supported).
